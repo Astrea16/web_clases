@@ -46,13 +46,13 @@ p{
     margin-bottom: 2%;
 }
 .carousel-indicators li{
-	width: 12px;
-    height: 12px;
+	width: 10px;
+    height: 10px;
     color: transparent;
     text-decoration: none;
     background-color: #000;
     border: 2px solid #fff;
-    border-radius: 8px;
+    border-radius: 5px;
     display: inline-block;
     text-indent: 1000px;
     overflow: hidden;
@@ -85,8 +85,8 @@ p{
     border: 0px;
     border-radius: 0px;
 }
-  button .mini{
-    margin-top: 10px;
+button.mini{
+    margin-top: 23px;
 }
 .navbar-collapse{
     padding-left: 0px;
@@ -252,10 +252,7 @@ p{
     margin: 100px 0px;
     padding-bottom: 75px;
 }
- {
-    border-bottom: 2px solid #ccc;
-}
- }   
+
 .resumeRight{
     margin-top: 5.5%;
 }
@@ -281,9 +278,16 @@ p{
 /*----------------------section7-----------------------*/
 #testimonials{
     background: #f2f2f1;
-}    
+}
+
 .bx-viewport {
-    margin-top: 100px;
+    margin-top: 95px;
+    margin-bottom: 125px;
+    position: static!important; 
+    border: 0!important; 
+    -webkit-box-shadow: none!important; 
+    box-shadow: none!important;
+     background: #f2f2f1 !important;
 } 
 .bx-pager{
     display: inline-block;
@@ -294,13 +298,19 @@ p{
 .bx-controls-direction{
     display: none;
 }
+.bx-wrapper .bx-pager{
+    right: 0%;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #f2f2f1 !important;
+}    
 .bx-pager-link{
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     color: transparent;
     text-decoration: none;
     border: 2px solid #2ecc71;
-    border-radius: 8px;
+    border-radius: 5px;
     display: inline-block;
     overflow: hidden;
     text-indent: 1000px;
@@ -310,7 +320,7 @@ p{
 #testimonials a:focus,
 #testimonials a:active,
 #testimonials a:hover{
-    background-color: #2ecc71;
+    background-color: #2ecc71 !important;
 }
 /*-----------------------------section8-----------------------*/
 .topPortfolio{
@@ -328,7 +338,7 @@ p{
 
 
 /*------------------------------section9--------------------*/
-#contact_me{
+#contact{
     background: #252e30;
 } 
  .contact {
@@ -338,11 +348,11 @@ p{
     padding-left: 35px;
     margin-top: 75px;
 }  
- #contact_me p span{
+ #contact p span{
     color: #fff;
     margin-right: 40px;
  }
-#contact_me p span.phone{
+#contact p span.phone{
     margin-right: 35px;    
 }
 .contact_meLeft{
@@ -376,11 +386,20 @@ textarea{
     color: #fff;
     margin-bottom: 15px;
 }
+#contact .btn{
+    font: 18px 'RobotoBold';
+    color: #fff;
+    background-color: #191f21;
+    text-transform: uppercase;
+    border-radius: 0px;
+    border: 0px;
+    padding: 15px 35px;
+}
 
 /*-----------------------------------------------*/
  @media screen and (max-width: 991px) {                                                                                                                            
     .slider .text h1{
-   font-size: 45px;                                                                      font-size: 45px;
+   font-size: 45px;
  }
 }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
 @media screen and (max-width: 768px) {                                                                                                                              
