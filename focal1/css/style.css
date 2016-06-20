@@ -26,6 +26,9 @@ p{
     text-transform: uppercase;
     padding: 15px 35px;
    } 
+a:hover{
+    text-decoration: none;
+}   
 /*------------section1---------------*/
 #carousel-example-generic{
    position: relative; 
@@ -76,6 +79,15 @@ p{
 
 }
 
+
+.slider a.active,
+.slider a:focus,
+.slider a:active,
+.slider a:hover{
+    background: #fff;
+    
+}
+
 /*------------------section2-----------------*/
 .navbar .navbar-default{
     margin-bottom: 0px ;
@@ -123,11 +135,36 @@ button.mini{
     margin: 0 auto;
     background: #fff;
 }
-.text1_1{
-    padding: 72px 170px 63px 180x;
-    margin-left: 15px;
+ #home .text1_1{
+    
+    margin: 70px 0 60px 0px;
+}
+.col_middle{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 15px; 
+}
+a#up {
+ display: none;
+ position: fixed;
+  
+ margin-left: calc(-91% - 4em); 
+ padding: 100% 1% 0 99%;
+ bottom: 0;
+ font: 18px/100% 'RobotoBold', sans-serif;
+ text-decoration: none;
+ color: #bbb;
+ -webkit-transition: 1s;
+ transition: 1s;
+}
+a#up:before {
+ position: absolute;
+ content: url(../img/up.png);
+ margin: -130px 0 0 60px;
 }
 
+
+a#up:hover {color: #000; background-color: rgba(0,0,0,.3);}
 
 /*--------------------section4--------------------*/
 #about_me {
@@ -137,41 +174,62 @@ button.mini{
 #about_me .col-left{
     padding-right: 0px;
 }
+.col-left img {
+    margin: 0px auto;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
 #about_me .text-header {
-    margin-top: 9%;
-    margin-bottom: 2%;
-    padding-left: 67px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    
 }
 #about_me h3{
-    margin: 0px 0px 30px 0px;    
+    margin: 0px 0px 18px 0px;    
     padding-top: 0px;
 }
-#about_me .icon{
-    padding-top: 6px;
+#about_me .icon {
+    float: left;
+    margin-right: 25px;
+    margin-top: 6px;
 }
+.text-icon{
+    margin-left: 65px;
+}
+
 #about_me .text-header .top{
     margin-bottom: 25px;
 }
-#about_me .text2 .icon{
-    padding-top: 25px;
+.text-top{
+    margin-left: 70px;
+    margin-bottom: 10px;
 }
-#about_me .text2 .text-top{
-    margin-bottom: 40px;
+.text-bottom{
+    margin-left: 70px;
+    margin-bottom: 60px;
 }
+
 /*--------------------section5----------------------*/
-#skills .diagramN{
-    padding-top: 75px;
-    padding-bottom: 100px;
-}
+#skills{
+    background-color: #fff;
+ }
+.diagramN{
+    margin-top: 70px;
+    margin-bottom: 70px;
+ }
 .diagramN h2{
     margin-bottom: 50px;
     padding-left: 27px;
 }
- .diagramN p{
+.diagramN p{
     margin-bottom: 30px;
     padding-left: 27px;
 } 
-
+.skill{
+    padding-left: 32px;
+}
 .diagramN .cube{
     width: 560px;
     height: 30px;
@@ -182,6 +240,10 @@ button.mini{
     margin-top: 25px;
     margin-left: 27px;
 }
+.diagramN .link-text:hover{
+    background: #2ecc71;
+    color: #f2f2f1;
+} 
 .diagramN .cube1{
     background: -webkit-linear-gradient(left, #2ecc71 90%, #f2f2f1 10%);
     background: -o-linear-gradient(left, #2ecc71 90%, #f2f2f1 10%);
@@ -194,11 +256,11 @@ button.mini{
     background: linear-gradient(to right, #2ecc71 80%, #f2f2f1 20%);
 }
 .diagramN .cube3{
-    background: -webkit-linear-gradient(left, #2ecc71 70%, #f2f2f1 30%);
-    background: -o-linear-gradient(left, #2ecc71 70%, #f2f2f1 30%);
+    background: -webkit-linear-gradient(to right, #2ecc71 70%, #f2f2f1 30%);
+    background: -o-linear-gradient(to right, #2ecc71 70%, #f2f2f1 30%);
     background: linear-gradient(to right, #2ecc71 70%, #f2f2f1 30%);
 }
-.cube1N span{
+.cube1 span{
     padding-left: 84%;
     vertical-align: middle;
     line-height: 2;
@@ -236,10 +298,14 @@ button.mini{
     border-top: 20px solid #f2f2f1;
 }
 .resumeText{
-    margin: 100px 0px;
+    margin: 70px 0px 100px 0px;
 }
+.resumefirst{
+    padding-right: 25px;
+}    
 .resumeLeft{
-    padding-left: 30px;
+    padding-left: 47px;
+    padding-right: 0px;
 }
 .resume .link-text{
     border: 2px solid #2ecc71;
@@ -247,14 +313,32 @@ button.mini{
     margin-top: 25px;
     margin-left: 27px
  }
+.resume .link-text:hover{
+    background: #2ecc71;
+    color: #f2f2f1;
+} 
+ .work .resumeLeft{
+    padding-left: 49px;
+ }
  
  .educationR{
-    margin: 100px 0px;
-    padding-bottom: 75px;
+    margin: 65px 0px 55px 0px;
+    
 }
+hr{
+    margin-left: 196px;
+    width: 76%;
+    border: none; 
+    background-color: #ccc; 
+    color: #ccc; /* Цвет линии для IE6-7 */
+    height: 2px; 
+
+   }
 
 .resumeRight{
-    margin-top: 5.5%;
+    padding-right: 55px;
+    padding-left: 18px;
+    margin-top: 75px;
 }
  .resumeRight .gpa{
     background: #2ecc71 ;
@@ -263,7 +347,7 @@ button.mini{
     
  }
 .resumeRight .college{
-    font-family: 18px 'RobotoMedium';
+    font: 18px 'RobotoMedium';
 }
 .resumeRight .year{
     margin-bottom: 20px;
@@ -273,7 +357,7 @@ button.mini{
     padding-top: 30px;
 }
  .work{
-    margin-bottom: 70px;
+    margin: 70px 0px 60px 0px;
 }
 /*----------------------section7-----------------------*/
 #testimonials{
@@ -283,11 +367,12 @@ button.mini{
 .bx-viewport {
     margin-top: 95px;
     margin-bottom: 125px;
-    position: static!important; 
-    border: 0!important; 
-    -webkit-box-shadow: none!important; 
-    box-shadow: none!important;
+    position: static; 
+    border: 0 !important; 
+    -webkit-box-shadow: none !important; 
+    box-shadow: none !important;
      background: #f2f2f1 !important;
+     filter:none !important;/* для IE*/
 } 
 .bx-pager{
     display: inline-block;
@@ -302,7 +387,7 @@ button.mini{
     right: 0%;
 }
 .bx-wrapper .bx-pager.bx-default-pager a {
-    background: #f2f2f1 !important;
+    background: #f2f2f1 ;
 }    
 .bx-pager-link{
     width: 10px;
@@ -320,15 +405,15 @@ button.mini{
 #testimonials a:focus,
 #testimonials a:active,
 #testimonials a:hover{
-    background-color: #2ecc71 !important;
+    background-color: #2ecc71;
 }
 /*-----------------------------section8-----------------------*/
 .topPortfolio{
-    margin-top: 75px;
+    margin-top: 70px;
     margin-bottom: 40px;
 }
  .gallery img{
-    margin: 20px;
+    margin: 18px;
     display:inline-block;
 }
 .bottomportfolio{
@@ -345,7 +430,7 @@ button.mini{
     color: #fff;
  }
 .contact_meForm{
-    padding-left: 35px;
+    padding-left: 25px;
     margin-top: 75px;
 }  
  #contact p span{
@@ -356,7 +441,11 @@ button.mini{
     margin-right: 35px;    
 }
 .contact_meLeft{
-    padding-left: 70px;
+    padding-left: 5px;
+    padding-right: 0px;
+}
+.meLeft{
+    padding-right: 28px
 }
 
 .formTop{
@@ -386,7 +475,7 @@ textarea{
     color: #fff;
     margin-bottom: 15px;
 }
-#contact .btn{
+#contact .btns{
     font: 18px 'RobotoBold';
     color: #fff;
     background-color: #191f21;
@@ -395,6 +484,10 @@ textarea{
     border: 0px;
     padding: 15px 35px;
 }
+#contact .btns:hover { 
+    background: #4b5456;
+    color: #191f21;
+}
 .footer{
     background: #191f21;
     -webkit-box-shadow: 0px 5px 7px 0px rgba(30,30,30,1);
@@ -402,35 +495,148 @@ textarea{
     box-shadow: 0px 5px 7px 0px rgba(30,30,30,1);
  }
  .footers{
-    margin: 45px 0px 50px 0px;
+    margin: 45px 0px;
 }
 .footers p{
     font: 14px 'RobotoMedium';
     text-transform: uppercase;
 }
-.social a img{
+.icons{
+    background: url(../img/social.png);
+    width: 34px;
+    height: 34px;
+    display: inline-block;
     margin-right: 5px;
+    transition: all .0s;
+}
+.tw-ico{
+    background-position: 0 0;
+}
+.tw-ico:hover{
+    background-position: 0 -34px;
+}
+
+.fb-ico{
+    background-position: -44px 0;
+}
+.fb-ico:hover{
+    background-position: -44px -34px;
+}
+.pnt-ico{
+    background-position: -88px 0;
+}
+.pnt-ico:hover{
+    background-position: -88px -34px;
+ }
+.gl-ico{
+    background-position: -132px 0;
+}
+.gl-ico:hover{
+    background-position: -132px -34px;
+}
+.drb-ico{
+    background-position: -176px 0;
+}
+.drb-ico:hover{
+    background-position: -176px -34px;
+}
+.in-ico{
+    background-position: -220px 0;
+}
+.in-ico:hover{
+    background-position: -220px -34px;
 }
 
     /*-----------------------------------------------*/
- @media screen and (max-width: 991px) {                                                                                                                            
+@media screen and (max-width: 1510px) {                                                                                                                              
+    .gallery .img-responsive{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+    width: 304px;
+ }
+} 
+@media screen and (max-width: 1199px) {
     .slider .text h1{
-   font-size: 45px;
- }
-}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-@media screen and (max-width: 768px) {                                                                                                                              
-    .slider .text h1{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
-  font-size: 30px;
- }
-}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
-@media screen and (max-width: 505px){
-    .navbar  img{                                                                                                                   
-  margin-left: 0px      
+   font-size: 56px;
  }  
-}
-@media screen and (max-width: 505px) {
     .diagramN .cube{
-    width: 250px;
+    width: 450px;
     height: 30px;
  }
+    hr{
+    width:  74%;
+    margin-left: 150px;
+ }
+    .gallery .img-responsive{
+    width: 223px;
+ }
+}      
+ @media screen and (max-width: 991px) {
+                                                                                                                
+    .slider .text h1{
+      font-size: 45px;
+ }
+    .navbar  img{
+      padding-left: 0px;
+    
+ }
+    .nav a{
+      margin-right: 0px;
+ }
+    #bs-navbar-collapse-1{
+      margin-left: 110px;
+      padding-right: 0px;
+ }
+    
+    .colnav{
+      padding-left: 25px;
+      text-align: left;
+ }
+    .gallery .img-responsive{
+    width: 202px;
+ }
 }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+@media screen and (max-width: 768px) {                                                                                                                              
+    .slider .text h1{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+    font-size: 30px;
+ }
+  #bs-navbar-collapse-1{
+      margin-left: 0px;
+      padding-right: 0px;
+ }
+ hr{
+     width:  92%;
+     margin-left: 30px;
+ }
+ .gallery .img-responsive{
+    width: 366px;
+ }
+} 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+@media screen and (max-width: 505px) {
+    #bs-navbar-collapse-1{
+      margin-left: 1px;
+ }
+    .skill{
+    padding-left: 10px;
+ }         
+    .work .resumeLeft{
+    padding-left: 15px;
+ }                        
+   .resumeLeft{                                                                                                                   
+   padding-left: 15px;      
+ }    
+   .diagramN .cube{
+    width: 250px;
+    height: 30px;
+ }  
+   .gallery img{
+    margin: 5px;
+    
+ }
+ hr{
+    width:  90%;
+    margin-left: 15px;
+ }
+}
+
+
