@@ -5,11 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/style.css">
 	<link href="CSS/jquery.bxslider.css" rel="stylesheet" />
 	<link href="css/lightbox.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript">
+	window.onscroll = function up() {
+	  document.getElementById('up').style.display = (window.pageYOffset > '200' ? 'block' : 'none');
+	}
+	</script>
 	<title>Focal</title>
 </head>
 <body>
@@ -31,7 +35,7 @@
 							<div class="carousel-caption">
 								<div class="text">
 									<h1>WEB & GRAPHIC DESIGNER</h1>
-									<a href="#" class="link-text">learn more</a>
+									<a href="#portfolio" class="link-text">learn more</a>
 								</div>
 
 							</div>
@@ -41,7 +45,7 @@
 							<div class="carousel-caption">
 								<div class="text">
 									<h1>WEB & GRAPHIC DESIGNER</h1>
-									<a href="#" class="link-text">learn more</a>
+									<a href="#portfolio" class="link-text">learn more</a>
 								</div>
 							</div>
 						</div>
@@ -50,7 +54,7 @@
 							<div class="carousel-caption">
 								<div class="text">
 									<h1>WEB & GRAPHIC DESIGNER</h1>
-									<a href="#" class="link-text">learn more</a>
+									<a href="#portfolio" class="link-text">learn more</a>
 								</div>
 							</div>
 						</div>
@@ -60,10 +64,10 @@
 			</div>
 		</div>
 	</section>
-	<section nav class="navbar navbar-default" role="navigation">
+	<header nav class="navbar navbar-default" role="navigation">
 	<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-4 col-sm-4 text-center ">
+				<div class=" col-lg-4 col-md-2 col-sm-1 colnav text-center">
 					<button type="button" class="navbar-toggle mini" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
@@ -72,7 +76,7 @@
 					</button>
 					<img src="img/logo.png" alt="Logotip">
 				</div>
-				<div class="col-md-8 col-ms-18 collapse navbar-collapse" id="bs-navbar-collapse-1">
+				<div class=" col-lg-8 col-md-10 col-sm-11 collapse navbar-collapse" id="bs-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li><a href="#home">Home</a></li>
 						<li><a href="#about_me">About Me</a></li>
@@ -85,106 +89,93 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</header>
+	<a href='#' id='up'></a>
 	<section id="home">	
 		<div class="container-fluid">
 			<div class="row text1_1">
 				<div class="col-md-4 col-sm-6 col-xs-12">
 					<div class="col-md-3 col-sm-1"></div>
-					<div class="col-md-9 col-md-11">
+					<div class="col-md-9 col-sm-11">
 						<h2>Values</h2>
 						<p>Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.</p>
-						</div>
+					</div>
 				</div>
 				<div class="col-md-4 col-sm-6 col-xs-12">
-					<div class="col-md-1 col-sm-1"></div>
-					<div class="col-md-10 col-md-10">	
+					<div class="col-md-2 col-sm-1"></div>	
+					<div class="col-md-8 col-sm-11 col_middle">
+					
 						<h2>Goals</h2>
 						<p>Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.</p>
 					</div>
-					<div class="col-md-1 col-sm-1"></div>	
+					<div class="col-md-2 col-sm-1"></div>	
 				</div>
 				<div class="col-md-4 col-sm-6 col-xs-12">
-					<div class="col-md-9 col-md-11">	
+					<div class="col-md-9 col-sm-11">	
 						<h2>Hobbies</h2>
 						<p>Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.</p>
 					</div>
-					<div class="col-md-3 col-sm-1"></div>	
+					<div class="col-md-3 col-sm-1"></div>
+				</div>		
 				</div>
 			</div>
-		</div>	
+			
 	</section>
 	<section id="about_me">
-		<div class="container-fluid">
+		
+			<div class="container-fluid">
 			<div class="row text2_1">
-				<div class="col-md-4 col-left">
+				<div class="col-md-4 col-sm-6 col-sm-12 col-left">
 					<img src="img/man1.jpg" alt="" class="img-responsive">
 				</div>
 				<div class="col-md-8 col-right">
 					<div class="row">
-
-						<div class="col-md-10 col-sm-10 col-xs-12 text-header">
+            <div class="col-md-1"></div>
+						<div class="col-md-10 col-sm-12 col-xs-12 text-header">
 							<h2>About Me</h2>
 							<p class="top">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri.</p> 
 
 							<p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei.</p>
 
 						</div>
-						<div class="col-md-2 "></div>
+						<div class="col-md-1"></div>
 					</div>
 					<div class="row text-top">
-						<div class="col-md-6 col-sm-8 col-xs-12">
-							<div class="col-md-1"></div>
-							<div class="col-md-2 icon">
-								<img src="img/icon1.png" alt="">
-							</div>
-							<div class="col-md-9">	
+						<div class="col-md-6 col-sm-8 col-xs-12" >
+								<img src="img/icon1.png" alt="" class="icon">
 								<h3>Web Design</h3>
-								<p>Lorem ipsum dolor sit amet, ea <br>doming epicuri iudicabit nam.</p>
+								<p class="text-icon">Lorem ipsum dolor sit amet, ea <br>doming epicuri iudicabit nam.</p>
 							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="col-md-2 icon">
-								<img src="img/icon3.png" alt="">
-							</div>
-							<div class="col-md-10">	
+						
+						<div class="col-md-6 col-sm-8 col-xs-12">
+								<img src="img/icon3.png" alt="" class="icon">
 								<h3>Graphic Design</h3>
-								<p>Lorem ipsum dolor sit amet, ea <br>doming epicuri iudicabit nam.</p>
-							</div>
+								<p class="text-icon">Lorem ipsum dolor sit amet, ea <br>doming epicuri iudicabit nam.</p>
 						</div>
 					</div>
 					<div class="row text-bottom">
 						<div class="col-md-6 col-sm-8 col-xs-12">
-							<div class="col-md-1"></div>
-							<div class="col-md-2 icon">
-								<img src="img/icon2.png" alt="">
-							</div>
-							<div class="col-md-9">	
+								<img src="img/icon2.png" alt="" class="icon">
 								<h3>Online Marketing</h3>
-								<p>Lorem ipsum dolor sit amet, ea <br>doming epicuri iudicabit nam.</p>
+								<p class="text-icon">Lorem ipsum dolor sit amet, ea <br>doming epicuri iudicabit nam.</p>
 							</div>
-						</div>
 						<div class="col-md-6">
-							<div class="col-md-2 icon">
-								<img src="img/icon4.png" alt="">
-							</div>
-							<div class="col-md-10">	
+							
+								<img src="img/icon4.png" alt="" class="icon">
 								<h3>SEO</h3>
-								<p>Lorem ipsum dolor sit amet, ea <br>doming epicuri iudicabit nam.</p>
+								<p class="text-icon">Lorem ipsum dolor sit amet, ea <br>doming epicuri iudicabit nam.</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
 	</section>
 	<section id="skills">
 	<div class="container-fluid">
 		<div class="row diagramN">
 			<div class="col-md-6 col-sm-8 col-xs-12">
 				<div class="col-md-2 col-sm-1 hidden-xs"></div>
-				<div class="col-md-10 col-sm-11 col-xs-12">
+				<div class="col-md-10 col-sm-11 col-xs-12 skill">
 					<h2>My Skills</h2>
 					<p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri/</p>
 					<p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.</p>
@@ -221,7 +212,7 @@
 			<div class="col-md-2 col-sm-1"></div>			
 		</div>
 		<div class="row educationR">
-			<div class="col-md-6 col-sm-8 col-xs-12 ">
+			<div class="col-md-6 col-sm-8 col-xs-12 resumefirst">
 				<div class="col-md-2"></div>
 
 				<div class="col-md-10 col-sm-12 col-xs-12 resumeLeft">
@@ -233,7 +224,7 @@
 				</div>
 				<div class="col-md-6 col-sm-8 col-xs-12 resumeRight">
 
-					<div class="col-md-9 col-sm-12 col-xs-12 ">
+					<div class="col-md-10 col-sm-12 col-xs-12 ">
 						<h3>Graphic Design Diploma</h3>
 						<p class="year"><span class="college">Reeves College</span>  /  June 2008 - May 2010</p> 
 						<p><span class="gpa">4.0 GPA</span></p>
@@ -246,8 +237,11 @@
 					<div class="col-md-2"></div>
 				</div>
 			</div>
+			<div class="container-fluiid">
+				<hr>
+			</div>
 			<div class="row work">
-				<div class="col-md-6 col-sm-8 col-xs-12 ">
+				<div class="col-md-6 col-sm-8 col-xs-12  resumefirst">
 					<div class="col-md-2"></div>
 					<div class="col-md-10 col-sm-12 col-xs-12 resumeLeft">
 						<h2>Work Experience</h2>
@@ -257,7 +251,7 @@
 						</div>
 					</div>
 					<div class="col-md-6 col-sm-8 col-xs-12 resumeRight">
-						<div class="col-md-10 col-sm-12 col-xs-12 rR">
+						<div class="col-md-10 col-sm-12 col-xs-12 ">
 							<h3>Lead WEb Designer</h3>
 							<p class="year"><span class="college">ABC Company, Saskatoon</span>  /  June 2011 - Present</p> 
 							<p ><span class="gpa">3 Years</span></p>
@@ -281,14 +275,14 @@
 		<div class="container-fluid">
 			<div class="row text-center">
 				<div class="col-md-2 col-sm-1"></div>
-				<div class="col-md-8 col-sm-10 col-xs-12">
+				<div class="col-md-8 col-sm-10 col-xs-12 ">
 					<ul class="bxslider">
 						<li><p>"Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute  disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae 	 pri. Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.”
-						<p> John Stone</p></p></li>
+						<p> John Stone</p></li>
 						<li><p>"Learn by example! Find below a smattering of examples demonstrating many different features and modes of bxSlider. The slider is packed full of options, so let’s get on with it!”
-						<p> Steven Wanderski</p></p></li>
+						<p> Steven Wanderski</p></li>
 						<li><p>"Google help please I really loved this app on my earlier lenovo phone.currently am using samsung s7 but the offline commands doesn't work and the search is pretty degraded from my earlier experience . Please help me ,i am longing to use this app to the fullest”
-						<p> Jim Stanford</p></p></li>
+						<p> Jim Stanford</p></li>
 					</ul>
 				</div>
 				<div class="col-md-2 col-sm-1"></div>
@@ -307,17 +301,17 @@
 			</div>
 			<div class="row bottomportfolio text-center">
 				<div class="col-md-1"></div>
-				<div class="col-md-10 col-sm-12 col-xs-12">
+				<div class="col-md-10 col-sm-12 col-xs-12 portfolioCol">
 					<div class="gallery">
-						<a data-lightbox="roadtrip" href="img/img1_b.png"><img src="img/img1.png" class="img-responsive"></a>
-						<a data-lightbox="roadtrip"  href="img/img2_b.jpg"><img src="img/img2.jpg" class="img-responsive"></a>
-						<a data-lightbox="roadtrip"  href="img/img3_b.jpg"><img src="img/img3.jpg" class="img-responsive"></a>
-						<a data-lightbox="roadtrip"  href="img/img4_b.jpg"><img src="img/img4.jpg" class="img-responsive"></a>
-						<a data-lightbox="roadtrip"  href="img/img5_b.jpg"><img src="img/img5.jpg" class="img-responsive"></a>
-						<a data-lightbox="roadtrip"  href="img/img6_b.jpg"><img src="img/img6.jpg" class="img-responsive"></a>
-						<a data-lightbox="roadtrip"  href="img/img7_b.jpg"><img src="img/img7.jpg" class="img-responsive"></a>
-						<a data-lightbox="roadtrip" href="img/img8_b.jpg"><img src="img/img8.jpg" class="img-responsive"></a>
-						<a data-lightbox="roadtrip"  href="img/img9_b.jpg"><img src="img/img9.jpg" class="img-responsive"></a>
+						<a data-lightbox="roadtrip" href="img/img1_b.jpg"><img src="img/img1.jpg" alt="Filter by category" class="img-responsive"></a>
+						<a data-lightbox="roadtrip"  href="img/img2_b.jpg"><img src="img/img2.jpg" alt="Themes" class="img-responsive"></a>
+						<a data-lightbox="roadtrip"  href="img/img3_b.jpg"><img src="img/img3.jpg" alt="Themes" class="img-responsive"></a>
+						<a data-lightbox="roadtrip"  href="img/img4_b.jpg"><img src="img/img4.jpg" alt="Themes Ontario" class="img-responsive"></a>
+						<a data-lightbox="roadtrip"  href="img/img5_b.jpg"><img src="img/img5.jpg" alt="Icons" class="img-responsive"></a>
+						<a data-lightbox="roadtrip"  href="img/img6_b.jpg"><img src="img/img6.jpg" alt="Patterns" class="img-responsive"></a>
+						<a data-lightbox="roadtrip"  href="img/img7_b.jpg"><img src="img/img7.jpg" alt="Mockups" class="img-responsive"></a>
+						<a data-lightbox="roadtrip" href="img/img8_b.jpg"><img src="img/img8.jpg" alt="Ul Kits" class="img-responsive"></a>
+						<a data-lightbox="roadtrip"  href="img/img9_b.jpg"><img src="img/img9.jpg" alt="Burned" class="img-responsive"></a>
 					</div>
 				</div>
 				<div class="col-md-1"></div>
@@ -328,8 +322,8 @@
 		<div class="container-fluid">
 			<div class="row formTop">
 				<div class="col-md-6 col-md-12 col-xs-12 contact_meLeft">
-					<div class="col-md-2"></div>
-					<div class="col-md-10 col-sm-12 col-xs-12">
+					<div class="col-md-3"></div>
+					<div class="col-md-9 col-sm-12 col-xs-12 meLeft">
 						<h2 class="contact">Contact Me</h2>
 						<p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</p>
 
@@ -343,20 +337,23 @@
 					</div>
 				<div class="col-md-6 col-md-12 col-xs-12 contact_meForm">	
 					<div class="col-md-9 col-sm-12 col-xs-12">
-						<form role="form">
+						<form action="post.php" method="POST" id="form">
+						<div class="form-group hidden">
+								<div class="alert alert-info" role="alert" id="result"></div>
+							</div>
 							<div class="form-group">
 								<label for="name">Name*</label>
-								<input type="text" class="form-control" id="name" size="50">
+								<input type="text" name="name" class="form-control" id="name" size="50" required="required">
 							</div>
 							<div class="form-group">
 								<label for="email">Email Address*</label>
-								<input type="email" class="form-control" id="email">
+								<input type="text" name="email" class="form-control" id="email" required="required">
 							</div>
 							<div class="form-group">
 								<p class="areatext">Email Address*</p>
-								 <p><textarea name="comment" class="form-control" cols="59" rows="12"></textarea></p>
+								 <p><textarea name="message" class="form-control" cols="59" rows="12" required="required"></textarea></p>
 							</div>
-							<button type="submit" class="btn">Contact me</button>
+							<button type="submit" class="btns">Contact me</button>
 						</form>
 					</div>
 					<div class="col-md-3"></div>
@@ -364,27 +361,29 @@
 			</div>
 			</div>	
 			</section>
-			<section class="footer">
+			<footer class="footer">
 				<div class="container-fluid ">
 					<div class="row text-center footers">
 					
 						<p>Copyright 2014 Focal - Built With Passion</p>
 					
-					<div class="social text-center">
-						<a href="#"><img src="img/icon5.png" alt=""></a>
-						<a href="#"><img src="img/icon6.png" alt=""></a>
-						<a href="#"><img src="img/icon7.png" alt=""></a>
-						<a href="#"><img src="img/icon8.png" alt=""></a>
-						<a href="#"><img src="img/icon9.png" alt=""></a>  
-						<a href="#"><img src="img/icon10.png" alt=""></a>  
+					<div class="social-icons text-center">
+						 <a href=https://twitter.com/intent/tweet class="tw-ico icons"></a>
+						<a href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fsharer.php" class="fb-ico icons"></a>
+						<a href="#" class="pnt-ico icons"></a>
+						<a href="https://plus.google.com/share?url=http%3A%2F%2Fdic.academic.ru%2Fdic.nsf%2Fislam%2F371%2F%25D0%2598%25D1%2584%25D1%2580%25D0%25B8%25D1%2582" class="gl-ico icons"></a>
+						<a href="http://www.dribbble.com/mufix" class="drb-ico icons"></a>  
+						<a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2FpostLogin%3Fsession_rikey%3DjRh30dkmcLbt2bPOncGnS_LQRLqseBZ5CLU3BLVpwWan2vADaKauMBEyw-7ka_NWeB1Q0cYKTN__iva" class="in-ico icons"></a>  
 					</div>
 					</div>
 				</div>
-			</section>
+			</footer>
+			
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
 			<script src="js/bootstrap.min.js"></script>
 			<script src="js/bxslider/jquery.bxslider.min.js"></script>
-			<script src="js/js.js" ></script>
+			<script src="js/js.js"></script>
 			<script src="js/lightbox.min.js"></script>
-</body>
+
+	</body>
 </html>
